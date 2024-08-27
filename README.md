@@ -1,5 +1,5 @@
 # product_management_app_public
-**A product management android app**
+**A product management android app** < br / >
 The android app is coded in kotlin and uses a database hosted on firebase to save the data.
 This allows for multiple users to use the app.
 (The firebase servers are currently down)
