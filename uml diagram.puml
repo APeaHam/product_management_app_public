@@ -1,0 +1,66 @@
+@startuml
+class au.edu.swin.sdmd.Core3.Product {
++ Map<String, Any?> toMap()
+}
+class au.edu.swin.sdmd.Core3.ProductListAdapter$ViewHolder {
++  image
++  product
++  brand
++  stock
++  price
++ void bind(Product)
+}
+class au.edu.swin.sdmd.Core3.ProductListAdapter {
++ ViewGroup parent
++ ViewHolder onCreateViewHolder(ViewGroup,Int)
++ Int getItemCount()
++ void onBindViewHolder(ViewHolder,Int)
+}
+class au.edu.swin.sdmd.Core3.ProductStore {
++  database
++  productList
++  displayList
++  storageRef
++ void writeNewPost(Product)
++ void removePost(Product)
+}
+class au.edu.swin.sdmd.Core3.EditProductActivity {
++ EditText name
++ EditText brand
++ EditText stock
++ EditText price
++ EditText description
++ BottomAppBar bottomAppBar
++ ImageView ProductImage
++ Uri imageUri
++ void onCreate(Bundle?)
+- void chosePicture()
++ void onActivityResult(Int,Int,Intent?)
+- void uploadPicture()
+}
+class au.edu.swin.sdmd.Core3.ViewProductActivity {
++ TextView name
++ TextView brand
++ TextView stock
++ TextView price
++ TextView description
++ BottomAppBar bottomAppBar
++ ImageView ProductImage
++ Product product
++ void onCreate(Bundle?)
+}
+class au.edu.swin.sdmd.Core3.MainActivity {
++ ProductListAdapter productList
++ SearchView searchBar
++ void onCreate(Bundle?)
++ void filter()
++ void null()
+}
+
+
+au.edu.swin.sdmd.Core3.ProductListAdapter +.. au.edu.swin.sdmd.Core3.ProductListAdapter$ViewHolder
+au.edu.swin.sdmd.Core3.RecyclerView.ViewHolder <|-- au.edu.swin.sdmd.Core3.ProductListAdapter$ViewHolder
+androidx.appcompat.app.AppCompatActivity <|-- au.edu.swin.sdmd.Core3.EditProductActivity
+androidx.appcompat.app.AppCompatActivity <|-- au.edu.swin.sdmd.Core3.ViewProductActivity
+androidx.appcompat.app.AppCompatActivity <|-- au.edu.swin.sdmd.Core3.MainActivity
+@enduml
