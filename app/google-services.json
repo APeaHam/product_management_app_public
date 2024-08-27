@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "78740127156",
+    "firebase_url": "https://custom-app-mobile-dev-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "custom-app-mobile-dev",
+    "storage_bucket": "custom-app-mobile-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78740127156:android:d05905e371b2811c5086e1",
+        "android_client_info": {
+          "package_name": "au.edu.swin.sdmd.Core3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0JMFw9gE_ZoCaEf5-pSEs4-rzDLelyx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

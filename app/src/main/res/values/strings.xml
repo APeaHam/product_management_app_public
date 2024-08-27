@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Product Management</string>
+    <string name="brand_title">Brand:</string>
+    <string name="stock_title">Stock:</string>
+    <string name="price_title">Price:</string>
+    <string name="description_title">Description:</string>
+
+</resources>
